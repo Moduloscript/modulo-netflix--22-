@@ -14,10 +14,10 @@ function useAlan() {
     alanBtn({
       key: 'e85d8e7360b5ebb55045baf4eab3f18d2e956eca572e1d8b807a3e2338fdd0dc/stage',
       onCommand: ({
-        command, mode, genres, genreOrCategory, query,
+        command, mode, genre, genreOrCategory, query,
       }) => {
         if (command === 'chooseGenre') {
-          const foundGenre = genres.find((g) => g.name.toLowerCase() === genreOrCategory.toLowerCase());
+          const foundGenre = genre.find((g) => g.name.toLowerCase() === genreOrCategory.toLowerCase());
 
           if (foundGenre) {
             history.push('/');
