@@ -1,4 +1,3 @@
-/* eslint-disable linebreak-style */
 import { makeStyles } from '@mui/styles';
 
 export default makeStyles(() => ({
@@ -11,6 +10,7 @@ export default makeStyles(() => ({
   },
   content: {
     flexGrow: 1,
-    padding: '7em',
+    padding: '2rem',
+    width: '100%',
   },
 }));
